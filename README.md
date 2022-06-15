@@ -1,2 +1,2 @@
-# understandng-api
-A simple project aimed at better understanding Application Programming Interfaces
+# understanding-api
+A simple project aimed at better understanding WEB Application Programming Interfaces
