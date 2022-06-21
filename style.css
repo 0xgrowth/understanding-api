@@ -1,8 +1,10 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 8em;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
     background: #222;
@@ -16,7 +18,7 @@ body {
     background: #000000d0;
     color: white;
     padding: 2em;
-    margin: 1em;
+    margin: 3em;
     width: 100%;
     max-width: 420px;
     border-radius:  30px;
@@ -99,3 +101,17 @@ h1.temp {
     background: rgb(37, 37, 37);
     transition: 0.4s ease-in-out;
   }
+
+.bard {
+    background: #00000017;
+    color: white;
+    padding: 2em;
+    margin: 1em;
+    width: 100%;
+    max-width: 420px;
+    border-radius:  30px;
+}
+
+.winn {
+  color: white;
+}
