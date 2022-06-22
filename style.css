@@ -1,103 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800&display=swap');
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 8em;
-    height: 100vh;
-    font-family: 'Open Sans', sans-serif;
-    background: #222;
-    background-image: url(https://images.unsplash.com/photo-1596833100340-9ebe50af04f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 3em 8em;
+  height: 100vh;
+  font-family: 'Cairo',
+    sans-serif;
+  background: #222;
+  background-image: url(nature.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-size: 120%;
 }
 
 .card {
-    background: #000000d0;
-    color: white;
-    padding: 2em;
-    margin: 1em;
-    width: 100%;
-    max-width: 420px;
-    border-radius:  30px;
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  margin: 1em;
+  width: 200%;
+  max-width: 420px;
+  border-radius: 30px;
 }
 
-input.search-bar {
-    border: none;
-    outline: none;
-    padding: 0.75em 2em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: white;
-    font-family: inherit;
-    font-size: 105%;
-    width: calc (100% - 10px);
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.75em 2em;
+  border-radius: 15px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  margin-right: 5px;
+  width: 70%;
+  text-transform: capitalize;
 }
 
 button {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background: #7c7c7c2b;
-    color: white;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    
+  height: 49px;
+  width: 54px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 25px;
 }
 
 button:hover {
-    background: #7c7c7c6b;
+  background: #7c7c7c6b;
 }
 
 h1.temp {
-    margin: 0;
+  margin: 0;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-  }
-  
+  display: flex;
+  align-items: center;
+}
+
 .description {
-    text-transform: capitalize;
-    margin-left: 8px;
-  }
-  
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
 .weather.loading {
-    visibility: hidden;
-    max-height: 20px;
-    position: relative;
-  }
-  
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
 .weather.loading:after {
-    visibility: visible;
-    content: "Input City/Town in search bar. . .";
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 20px;
-  }
+  visibility: visible;
+  content: "Input City/Town in search bar. . .";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
 
-  .clear {
-    border: none;
-    outline: none;
-    padding: 1em 1em;
-    border-radius: 24px;
-    background: #dddddde5;
-    color: rgb(37, 37, 37);
-    font-family: inherit;
-    font-size: 105%;
-    width: calc (100% - 100px);
-    text-align: center;
-    cursor: pointer;
-  }
+#clear {
+  border: none;
+  outline: none;
+  padding: 1em 1em;
+  border-radius: 24px;
+  background: #dddddde5;
+  color: rgb(37, 37, 37);
+  font-family: inherit;
+  font-size: 105%;
+  transition: 0.3s all ease;
+  text-align: center;
+  cursor: pointer;
+}
 
-  .clear:hover {
-    color: #dddddde5;
-    background: rgb(37, 37, 37);
-    transition: 0.4s ease-in-out;
-  }
+.clear {
+  border: none;
+  outline: none;
+  padding: .3em .5em;
+  border-radius: 20px;
+  background: #dddddde5;
+  color: rgb(37, 37, 37);
+  font-family: inherit;
+  font-size: 105%;
+  transition: 0.3s all ease;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 0;
+  line-height: 120%;
+}
+
+#clear:hover {
+  color: #dddddde5;
+  background: rgb(37, 37, 37);
+}
+
+.clear:hover {
+  color: #dddddde5;
+  background: rgb(37, 37, 37);
+  transform: scale(1.2);
+}
+
+.clear a {
+  text-decoration: none;
+}
+
+.clear a:visited {
+  color: rgb(184, 134, 11);
+}
+
+.winn {
+  font-family: inherit;
+}
+
+.bard {
+  margin: 20px;
+}
